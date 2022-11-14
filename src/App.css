@@ -8,6 +8,8 @@ body {
 }
 
 .wrapper {
+  width: 1200px;
+  margin: 0 auto;
   display: grid;
   grid-template: "header header" "navigation content";
   grid-template-columns: 20% 80%;
@@ -17,19 +19,22 @@ body {
 
 .header {
   grid-area: header;
-  background-color: cadetblue;
+  background-color: rgba(130, 219, 222, 0.697);
+  padding: 5px 5px;
 }
 
-.nav__wrapper {
-  background-color: aquamarine;
+.header > img {
+  width: 7%;
 }
 
 .nav {
+  background-color: rgba(130, 219, 222, 0.995);
   grid-area: navigation;
   padding: 5px 0;
   text-align: left;
   font-size: 17px;
-  margin: auto;
+  text-align: center;
+  height: 100%;
 }
 
 .nav__item {
@@ -38,5 +43,38 @@ body {
 
 .content {
   grid-area: content;
-  background-color: chocolate;
+  display: grid;
+  grid-template: "pImg pImg" "avatar desc";
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 20% max-content;
+  grid-gap: 5px;
+  background-color: rgba(77, 139, 140, 0.36);
+}
+
+.profile__img {
+  grid-area: pImg;
+}
+
+.profile__img > img {
+  width: 960px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar {
+  grid-area: avatar;
+}
+
+.avatar > img {
+  width: 70%;
+}
+
+.description {
+  grid-area: desc;
+  margin: 0 auto 0 -57px;
+}
+
+.description > p {
+  text-align: justify;
+  width: 100%;
 }
