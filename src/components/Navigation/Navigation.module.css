@@ -1,0 +1,13 @@
+.nav {
+    background-color: rgba(130, 219, 222, 0.995);
+    grid-area: navigation;
+    padding: 5px 0;
+    text-align: left;
+    font-size: 17px;
+    text-align: center;
+    height: 100%;
+}
+
+.item {
+    margin: 10px 0;
+}

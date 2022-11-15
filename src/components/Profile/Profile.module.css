@@ -1,0 +1,37 @@
+.content {
+    grid-area: content;
+    display: grid;
+    grid-template: "pImg pImg" "avatar desc";
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 20% max-content;
+    grid-gap: 5px;
+    background-color: rgba(77, 139, 140, 0.36);
+}
+
+.profile__img {
+    grid-area: pImg;
+}
+
+.profile__img>img {
+    width: 960px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avatar {
+    grid-area: avatar;
+}
+
+.avatar>img {
+    width: 70%;
+}
+
+.description {
+    grid-area: desc;
+    margin: 0 auto 0 -57px;
+}
+
+.description>p {
+    text-align: justify;
+    width: 100%;
+}
